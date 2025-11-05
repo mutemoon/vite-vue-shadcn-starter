@@ -1,9 +1,13 @@
-import { createRouter, createWebHistory } from "vue-router";
-import { routes } from "vue-router/auto-routes";
 import { setupLayouts } from "virtual:generated-layouts";
+import { createRouter, createWebHistory } from "vue-router";
+import { handleHotUpdate, routes } from "vue-router/auto-routes";
 
 export const router = createRouter({
   history: createWebHistory(),
-  // pass the generated routes written by the plugin 🤖
+  // @ts-ignore
   routes: setupLayouts(routes),
 });
+
+if (import.meta.hot) {
+  handleHotUpdate(router);
+}

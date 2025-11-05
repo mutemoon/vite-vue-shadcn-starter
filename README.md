@@ -1,7 +1,13 @@
-# vite-vue-shadcn-starter
+# Vue 3 + TypeScript + Vite
 
-```sh
-bun install
-bun run dev
-bunx shadcn-vue@latest add button
-```
+- tailwindcss
+- vue-router
+- pinia
+
+- prettier
+- prettier-plugin-package
+- prettier-plugin-tailwindcss
+- unplugin-auto-import
+- unplugin-vue-components
+- unplugin-vue-router
+- vite-plugin-vue-layouts
